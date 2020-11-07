@@ -57,7 +57,7 @@ h4{
 h5{
   font-size: 15px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: #7d7f84;
 }
 a{
@@ -97,8 +97,9 @@ a{
   width: 200px;
   min-height: 100%;
   background-color: black;
-  align-self: stretch;
+  /* align-self: stretch; */
   overflow: hidden;
+  flex-wrap: wrap;
 }
 #main #sidebar a.logo > img{
   color: white;
@@ -108,9 +109,8 @@ a{
 #main #sidebar a{
   display: flex;
   width: 100%;
-  flex-basis: 30px;
   text-decoration: none;
-  color: #717171;
+  color: #a3a3a3;
   justify-content: flex-start;
   align-items: center;
   border-left: 2px solid black;
@@ -119,6 +119,7 @@ a{
 #main #sidebar .top-menu,
 #main #sidebar .playlist-menu{
   margin-bottom: 20px;
+  width: 100%;
 }
 #main #sidebar .top-menu a,
 #main #sidebar .playlist-menu a{
@@ -153,6 +154,41 @@ a{
   background-color: #a3a3a3;
   color: black;
 }
+#main #sidebar .app-menu{
+  align-self: flex-end;
+  width: 100%;
+}
+#main #sidebar .app-menu > a{
+  width: 100%;
+  margin: 0 5px;
+}
+#main #sidebar .app-menu > a > i{
+  margin-left: 5px;
+  margin-right: 20px;
+}
+#main #sidebar .app-menu > hr{
+  width: 90%;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid #a3a3a3;
+  margin: 10px auto 10px auto;
+  text-align: center;
+}
+#main #sidebar .app-menu > a:last-of-type{
+  margin: 0 0 10px 5px;
+}
+#main #sidebar .app-menu > a > img{
+  width: 25px;
+  height: 25px;
+  background-color: #a3a3a3;
+  color: white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+#main #sidebar .app-menu > a > h3{
+  font-size: 15px;
+}
 /* /SIDEBAR */
 
 /* COVERS */
@@ -182,7 +218,6 @@ a{
 #main #upgrade a.btn_up:hover{
   color: #1ed760;
 }
-
 /* /UPGRADE */
 
 /* NAVBAR TOP */
@@ -190,7 +225,7 @@ a{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 60px;
+  min-height: 60px;
   width: 100%;
   background-color: #141922;
 }
