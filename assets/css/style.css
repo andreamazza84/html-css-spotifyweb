@@ -355,6 +355,7 @@ a{
 #footer .song .favorites .fa-heart{
   margin-right: 20px;
 }
+/* /song-info */
 #footer .player > div {
   width: 100%;
   height: 50%;
@@ -374,4 +375,5 @@ a{
   margin: 5px 20px;
   font-size: 25px;
 }
+
 /* /Player */
