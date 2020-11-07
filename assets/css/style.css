@@ -64,6 +64,9 @@ a{
   text-decoration: none;
   font-size: 13px;
 }
+.spotify{
+  color: #1ed760;
+}
 .wrapper{
   display: flex;
   flex-direction: column;
@@ -88,6 +91,8 @@ a{
 }
 
 /* /Structure */
+
+/* SIDEBAR */
 #main #sidebar{
   width: 200px;
   min-height: 100%;
@@ -115,6 +120,10 @@ a{
 #main #sidebar .playlist-menu{
   margin-bottom: 20px;
 }
+#main #sidebar .top-menu a,
+#main #sidebar .playlist-menu a{
+  height: 30px;
+}
 #main #sidebar .top-menu a:hover{
   border-left: 2px solid yellow;
   color: white;
@@ -125,8 +134,10 @@ a{
   margin: 5px 10px;
 }
 #main #sidebar .playlist-menu a{
-  height: 30px;
   margin-left: 10px;
+}
+#main #sidebar .playlist-menu a:first-of-type{
+  height: 45px;
 }
 #main #sidebar .playlist-menu a:hover{
   color: white;
@@ -138,10 +149,13 @@ a{
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  margin: 5px 10px;
+  margin: 5px 5px 5px 0;
   background-color: #a3a3a3;
   color: black;
 }
+/* /SIDEBAR */
+
+/* COVERS */
 #main #covers{
   width: 100%;
   min-height: 100%;
@@ -149,6 +163,8 @@ a{
   overflow-y: auto;
   overflow-x: hidden;
 }
+
+/* UPGRADE */
 #main #upgrade{
   max-width: 100%;
   height: 60px;
@@ -158,16 +174,19 @@ a{
   justify-content: flex-end;
   align-items: center;
 }
-#main #upgrade a{
+#main #upgrade a.btn_up{
   text-decoration: none;
   color: white;
   text-transform: uppercase;
 }
+#main #upgrade a.btn_up:hover{
+  color: #1ed760;
+}
+
+/* /UPGRADE */
+
+/* NAVBAR TOP */
 #main #navbar-top{
-  /* position: absolute; */
-  /* z-index: 1; */
-  /* top: 0; */
-  /* overflow: hidden; */
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -176,14 +195,31 @@ a{
   background-color: #141922;
 }
 #main #navbar-top a{
-  text-decoration: none;
+  flex-direction: column;
+  height: 20px;
   color: #7d7f84;
+  text-decoration: none;
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 700;
   font-stretch: expanded;
   margin: 15px;
+  justify-content: center;
+  align-items: center;
 }
+#main #navbar-top a > hr{
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #141922;
+  border-bottom: 1px solid #141922;
+  margin-top: 5px;
+  width: 50%;
+}
+#main #navbar-top a:hover > hr{
+  border-top: 1px solid yellow;
+  border-bottom: 1px solid yellow;
+}
+/* /NAVBAR TOP */
 
 #main .albums{
   width: 100%;
@@ -231,3 +267,4 @@ a{
 #main .card:hover > .overlay > .fa-play-circle {
   display: inline;
 }
+/* /COVERS */
