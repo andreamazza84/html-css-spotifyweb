@@ -30,7 +30,7 @@
 /* Structure */
 body{
   font-family: 'Railway;', sans-serif;
-  color: #b8e2f3;
+  color: white;
 }
 section{
   padding: 30px 20px;
@@ -38,18 +38,20 @@ section{
 h2{
   font-size: 30px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 h3{
   font-size: 20px;
   font-weight: 700;
-  color: #b8e2f3;
+  color: white;
   margin: 10px 0;
 }
 h5{
-  font-size: 13px
-  color: #797c80;
-  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #7d7f84;
+
 }
 a{
   text-decoration: none;
@@ -65,17 +67,16 @@ a{
 }
 #main{
   width: 100%;
-  min-height: 100%;
+  height: 90%;
   flex-wrap: nowrap;
+  position: relative;
 }
 
 #footer{
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  align-self: flex-end;
   background-color: #282828;
   width: 100%;
-  height: 80px;
+  height: 10%;
 }
 
 /* /Structure */
@@ -92,7 +93,6 @@ a{
   overflow-y: auto;
   overflow-x: hidden;
 }
-
 #main #upgrade{
   max-width: 100%;
   height: 60px;
@@ -108,10 +108,15 @@ a{
   text-transform: uppercase;
 }
 #main #navbar-top{
+  /* position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%); */
   justify-content: center;
   align-items: center;
   min-height: 40px;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 #main #navbar-top a{
   text-decoration: none;
@@ -127,9 +132,11 @@ a{
   width: 100%;
   flex-wrap: wrap;
   justify-content: left;
+  align-items: baseline;
 }
 #main .card{
   width: 190px;
+  /* min-height: 300px; */
   background-color: #141922;
   text-align: center;
   justify-content: center;
@@ -144,11 +151,11 @@ a{
 }
 #main .card img{
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 #main .card .overlay{
   position: absolute;
-  top: 5%;
+  top: 0;
   left: 5%;
   display: flex;
   justify-content: center;
