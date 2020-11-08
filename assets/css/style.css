@@ -371,9 +371,68 @@ a{
   color: white;
   text-decoration: none;
 }
-#footer .player .commands > a:nth-child(3n){
+#footer .player .commands > a:nth-child(3){
   margin: 5px 20px;
   font-size: 25px;
 }
-
+#footer .player .time-bar{
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer .player .time-bar > div{
+  width: 10%;
+  font-size: 11px;
+}
+#footer hr{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  height: 0;
+  border-radius: 2px;
+}
+#footer .whole-bar{
+  border-bottom: 4px solid #444;
+}
+#footer .partial-bar{
+  border-bottom: 4px solid white;
+  position: absolute;
+}
+#footer .time-bar .whole-bar{
+  width: 80%;
+}
+#footer .time-bar .partial-bar{
+  width: 20%;
+  top: calc(50% - 2px);
+  left: 10%;
+}
+#footer .player .time-bar .remaining-time{
+  text-align: right;
+}
+#footer .settings{
+  justify-content: flex-end;
+}
+#footer .settings .commands{
+  width: 25%;
+  align-items: center;
+}
+#footer .settings .commands > a{
+  color: white;
+  text-decoration: none;
+  margin: 5px 10px;
+}
+#footer .settings .volume-bar{
+  width: 25%;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+}
+#footer .settings .volume-bar .whole-bar{
+  width: 100%;
+}
+#footer .settings .volume-bar .partial-bar{
+  width: 20%;
+  top: calc(50% - 2px);
+  left: 0;
+}
 /* /Player */
