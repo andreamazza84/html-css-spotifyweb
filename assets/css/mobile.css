@@ -1,8 +1,18 @@
 /* extra small screen */
-@media screen and (max-width: 639px){
+@media screen and (max-height: 599px){
+  #sidebar .app-menu,
+  #upgrade{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 638px){
   /* /Utility */
   .disp-none-xs{
     display: none !important;
+  }
+  .f-shrink{
+    flex-shrink: 1;
   }
   /* /Utility */
   #footer .song .favorites{
