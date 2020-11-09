@@ -94,9 +94,10 @@ a{
 /* SIDEBAR */
 #main #sidebar{
   width: 200px;
-  min-height: 100%;
+  /* min-height: 100%; */
   background-color: black;
-  /* overflow: hidden; */ /*######################*/
+  overflow-x: hidden;
+  overflow-y: auto; /*######################*/
   flex-wrap: wrap;
 }
 #main #sidebar a.logo > img{
