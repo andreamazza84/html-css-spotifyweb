@@ -33,13 +33,13 @@
     margin: 5px 7px 0 7px;
   }
   #main #sidebar a.logo > img.small-logo{
-    display: inline;
+    display: flex;
   }
   #main #sidebar a.logo > img.big-logo{
     display: none;
   }
   #main #sidebar > a{
-    display: block;
+    display: flex;
     margin: auto;
   }
 
