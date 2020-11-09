@@ -11,6 +11,9 @@
 .f-column{
   flex-direction: column;
 }
+.f-shrink{
+  flex-shrink: 2;
+}
 .btn_up{
   display: inline-block;
   background-color: #080b12;
@@ -31,6 +34,7 @@
 body{
   font-family: 'Railway;', sans-serif;
   color: white;
+  min-width: 380px;
 }
 section{
   padding: 30px 20px;
@@ -40,6 +44,7 @@ h2{
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 20px;
+  margin-left: 5px;
 }
 h3{
   font-size: 20px;
@@ -74,12 +79,14 @@ a{
   width: 100%;
   height: 100vh;
   background-color: #333;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 #main{
   width: 100%;
   height: 90%;
   flex-wrap: nowrap;
-  position: relative;
+  /* position: relative; */
 }
 #footer{
   align-self: flex-end;
@@ -93,17 +100,29 @@ a{
 
 /* SIDEBAR */
 #main #sidebar{
-  width: 200px;
-  /* min-height: 100%; */
+  width: 250px;
+  height: 100%;
   background-color: black;
   overflow-x: hidden;
-  overflow-y: auto; /*######################*/
+  overflow-y: auto;
   flex-wrap: wrap;
+}
+#main #sidebar a.logo{
+  display: block;
+  height: 30px;
+  margin: 10px 5px;
+  text-align: left;
 }
 #main #sidebar a.logo > img{
   color: white;
-  width: 70%;
-  margin: 15px;
+}
+#main #sidebar a.logo > img.big-logo{
+  display: inline;
+  height: 30px;
+}
+#main #sidebar a.logo > img.small-logo{
+  display: none;
+  height: 20px;
 }
 #main #sidebar a{
   display: flex;
@@ -113,6 +132,7 @@ a{
   justify-content: flex-start;
   align-items: center;
   border-left: 2px solid black;
+  border-right: 2px solid black;
   font-weight: 600;
 }
 #main #sidebar .top-menu,
@@ -124,14 +144,21 @@ a{
 #main #sidebar .playlist-menu a{
   height: 30px;
 }
+#main #sidebar .playlist-menu .new-playlist{
+  width: 100%;
+  height: 30px;
+}
 #main #sidebar .top-menu a:hover{
   border-left: 2px solid yellow;
   color: white;
 }
+#main #sidebar .top-menu a.small_icon{
+  text-align: center;
+}
 #main #sidebar .top-menu a.small_icon > img{
   color: #717171;
-  width: 12%;
-  margin: 5px 10px;
+  height: 20px;
+  margin: 5px;
 }
 #main #sidebar .playlist-menu a{
   margin-left: 10px;
@@ -157,13 +184,11 @@ a{
   align-self: flex-end;
   width: 100%;
 }
-#main #sidebar .app-menu > a{
-  width: 100%;
-  margin: 0 5px;
-}
 #main #sidebar .app-menu > a > i{
-  margin-left: 5px;
-  margin-right: 20px;
+  margin: 0 10px 10px 10px;
+}
+#main #sidebar .app-menu > a > span{
+  margin-bottom: 10px;
 }
 #main #sidebar .app-menu > hr{
   width: 90%;
@@ -171,8 +196,7 @@ a{
   border-right: none;
   border-top: none;
   border-bottom: 1px solid #a3a3a3;
-  margin: 10px auto 10px auto;
-  text-align: center;
+  margin: auto;
 }
 #main #sidebar .app-menu > a:last-of-type{
   margin: 0 0 10px 5px;
@@ -184,6 +208,8 @@ a{
   color: white;
   border-radius: 50%;
   margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 #main #sidebar .app-menu > a > h3{
   font-size: 15px;
@@ -234,7 +260,7 @@ a{
   color: #7d7f84;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 700;
   font-stretch: expanded;
   margin: 15px;
@@ -262,7 +288,7 @@ a{
   align-items: baseline;
 }
 #main .card{
-  width: 185px;
+  width: 180px;
   background-color: #141922;
   text-align: center;
   justify-content: center;
@@ -270,11 +296,17 @@ a{
   position: relative;
 }
 #main .card .box{
-  width: calc(0.9 * 185px);
-  height: calc(0.9 * 185px);
+  /* width: calc(0.9 * 180px);
+  height: calc(0.9 * 180px); */
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
 }
 #main .card img{
   width: 100%;
+}
+#main section > h5{
+  margin-left: 5px;
 }
 #main #popular-artists .card img,
 #main #popular-artists .card .overlay{
@@ -282,25 +314,27 @@ a{
 }
 #main .card .overlay{
   position: absolute;
-  top: 0;
-  left: 5%;
+  top: 5px;
+  left: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc(0.9 * 185px);
-  height: calc(0.9 * 185px);
+  width: calc(180px - 10px);
+  height: calc(180px - 10px);
   background-color: transparent;
 }
 #main .card .overlay > .fa-play-circle{
-  display: none;
+  color: transparent;
   font-size: 50px;
-  color: white;
 }
 #main .card:hover > .overlay{
-  background-color: rgba(0,0,0,0.5);
+  transition: all 0.5s;
+  background-color: rgba(0,0,0,0.6);
+
 }
 #main .card:hover > .overlay > .fa-play-circle {
-  display: inline;
+  transition: all 1s;
+  color: white;
 }
 
 /* /COVERS */
@@ -351,9 +385,9 @@ a{
   font-size: 15px;
   text-decoration: none;
   color: #a3a3a3;
+  margin-left: 20px;
 }
 #footer .song .favorites .fa-heart{
-  margin-right: 20px;
 }
 /* /song-info */
 #footer .player > div {
@@ -407,8 +441,12 @@ a{
   left: 0;
   top: 50%;
 }
+#footer .player .time-bar .listened-time{
+  margin-right: 10px;
+}
 #footer .player .time-bar .remaining-time{
   text-align: right;
+  margin-left: 10px;
 }
 /* Settings */
 #footer .settings{

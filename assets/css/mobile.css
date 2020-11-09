@@ -1,11 +1,36 @@
-/* large screen */
-@media screen and (min-width: 1200px){}
-
-/* medium screen */
-@media screen and (min-width: 992px) and (max-width: 1199){}
-
-/* small screen */
-@media screen and (min-width: 768px) and (max-width: 991px){}
-
 /* extra small screen */
-@media screen and (max-width: 767px){}
+@media screen and (max-width: 639px){
+  /* /Utility */
+  .disp-none-xs{
+    display: none !important;
+  }
+  /* /Utility */
+  #footer .song .favorites{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer .song .favorites .fa-heart{
+    margin-right: 0;
+  }
+  /* Sostituzione logo Spotify */
+  #main #sidebar{
+    width: 40px;
+    overflow-y: hidden;
+  }
+  #main #sidebar a.logo{
+    height: 25px;
+    margin: 5px 7px 0 7px;
+  }
+  #main #sidebar a.logo > img.small-logo{
+    display: inline;
+  }
+  #main #sidebar a.logo > img.big-logo{
+    display: none;
+  }
+  #main #sidebar > a{
+    display: block;
+    margin: auto;
+  }
+
+}

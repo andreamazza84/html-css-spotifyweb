@@ -21,50 +21,62 @@
       <aside id="sidebar" class="d-flex">
         <!-- logo -->
         <a href="#" class="logo">
-          <img src="assets/img/logo.svg" alt="Spotify logo">
+          <img class="big-logo" src="assets/img/logo.svg" alt="Spotify logo">
+          <img class="small-logo" src="assets/img/logo-small.svg" alt="Spotify small logo">
         </a>
 
+        <!-- Top menu -->
         <div class="top-menu d-flex f-column">
 
           <!-- home -->
           <a href="#" class="small_icon">
             <img src="assets/img/home.svg" alt="home logo">
-            Home
+            <span class="disp-none-xs">Home</span>
           </a>
           <!-- cerca -->
           <a href="#" class="small_icon">
-            <img src="assets/img/search.svg" alt="lent logo">
-            Cerca
+            <img src="assets/img/search.svg" alt="magnifing-lent logo">
+            <span class="disp-none-xs">Cerca</span>
           </a>
           <!-- La tua lista -->
           <a href="#" class="small_icon">
             <img src="assets/img/libreria.svg" alt="library logo">
-            La tua libreria
+            <span class="disp-none-xs">La tua libreria</span>
           </a>
         </div><!-- /Top menu -->
 
+        <!-- playlist menu -->
         <div class="playlist-menu">
-          <h4>playlist</h4>
-          <a href="#">
+          <h4 class="disp-none-xs">playlist</h4>
+          <a class="disp-none-xs" href="#">
             <i class="fas fa-plus"></i>
             Crea Playlist
           </a>
-          <a href="#">Nuova Playlist</a>
-          <a href="#">Nuova Playlist</a>
-          <a href="#">Nuova Playlist</a>
-          <a href="#">Nuova Playlist</a>
-          <a href="#">Nuova Playlist</a>
-          <a href="#">Nuova Playlist</a>
-          <a href="#">Nuova Playlist</a>
-        </div><!-- /Playlist menu -->
+          <div class="new-playlist"><a class="disp-none-xs" href="#">Nuova Playlist</a></div>
+          <div class="new-playlist"><a class="disp-none-xs" href="#">Nuova Playlist</a></div>
+          <div class="new-playlist"><a class="disp-none-xs" href="#">Nuova Playlist</a></div>
+          <div class="new-playlist"><a class="disp-none-xs" href="#">Nuova Playlist</a></div>
+          <div class="new-playlist"><a class="disp-none-xs" href="#">Nuova Playlist</a></div>
+          <div class="new-playlist"><a class="disp-none-xs" href="#">Nuova Playlist</a></div>
+          <div class="new-playlist"><a class="disp-none-xs" href="#">Nuova Playlist</a></div>
 
-        <div class="app-menu">
-          <a href="#"><i class="far fa-arrow-alt-circle-down"></i>Installa app</a>
-          <hr>
-          <a href="#"><img src="assets/img/profile.svg" alt="profilo generico"><h3>John Doe</h3></a>
-        </div>
+        </div><!-- /playlist menu -->
+
+        <!-- app-menu -->
+        <div class="app-menu d-flex f-column">
+          <a href="#"> <!-- download icon -->
+            <i class="far fa-arrow-alt-circle-down"></i>
+            <span class="disp-none-xs">Installa app</span>
+          </a>
+          <hr class="disp-none-xs">
+          <a href="#"> <!-- plain user profile -->
+            <img src="assets/img/profile.svg" alt="profilo generico">
+            <h3 class="disp-none-xs">John Doe</h3>
+          </a>
+        </div><!-- /app-menu -->
 
       </aside><!-- /Sidebar -->
+
 
       <div id="covers">
         <div id="upgrade" class="d-flex">
@@ -87,7 +99,7 @@
           <div class="albums d-flex">
 
             <a href="#" class="card d-flex f-column">
-              <div class="box">
+              <div class="box d-flex">
                 <img src="assets/img/metal_lifting.jpg" alt="">
               </div><!-- /.box -->
               <div class="overlay">
@@ -104,8 +116,8 @@
               <div class="overlay">
                 <i class="far fa-play-circle"></i>
               </div><!-- /.overlay -->
-              <h3>Stranger Things, Vol.1</h3>
-              <h5>Kyle Dixon &amp; Micheal Stein</h5>
+              <h3>Before there crowded streets</h3>
+              <h5>Dave Matthews</h5>
             </a><!-- /.card -->
 
             <a href="#" class="card d-flex f-column">
