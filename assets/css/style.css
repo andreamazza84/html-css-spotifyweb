@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 /* Utility */
 .d-flex{
   display: flex;
@@ -11,9 +10,6 @@
 }
 .f-column{
   flex-direction: column;
-}
-.f-shrink{
-  flex-shrink: 2;
 }
 .btn_up{
   display: inline-block;
@@ -142,12 +138,7 @@ a{
   margin-bottom: 20px;
   width: 100%;
 }
-#main #sidebar .top-menu a,
-#main #sidebar .playlist-menu a{
-  height: 30px;
-}
-#main #sidebar .playlist-menu .new-playlist{
-  width: 100%;
+#main #sidebar .top-menu a{
   height: 30px;
 }
 #main #sidebar .top-menu a:hover{
@@ -164,6 +155,7 @@ a{
 }
 #main #sidebar .playlist-menu a{
   margin-left: 10px;
+  height: 30px;
 }
 #main #sidebar .playlist-menu a:first-of-type{
   height: 45px;
@@ -182,7 +174,7 @@ a{
   background-color: #a3a3a3;
   color: black;
 }
-#main #sidebar .playlist-menu i:hover{
+#main #sidebar .playlist-menu a:first-of-type:hover > i{
   background-color: white;
 }
 #main #sidebar .app-menu{
@@ -214,9 +206,7 @@ a{
   background-color: #a3a3a3;
   color: white;
   border-radius: 50%;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 10px 10px 0;
 }
 #main #sidebar .app-menu > a > h3{
   font-size: 15px;
@@ -231,14 +221,11 @@ a{
   overflow-y: auto;
   overflow-x: hidden;
 }
-
 /* UPGRADE */
 #main #upgrade{
-  max-width: 100%;
+  width: 100%;
   height: 60px;
   background-color: #080b12;
-}
-#main #upgrade{
   justify-content: flex-end;
   align-items: center;
 }
@@ -254,11 +241,11 @@ a{
 
 /* NAVBAR TOP */
 #main #navbar-top{
+  width: 100%;
+  height: 60px;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  min-height: 60px;
-  width: 100%;
   background-color: #141922;
 }
 #main #navbar-top a{
@@ -335,13 +322,11 @@ a{
 #main .card:hover > .overlay{
   transition: all 0.5s;
   background-color: rgba(0,0,0,0.6);
-
 }
 #main .card:hover > .overlay > .fa-play-circle {
   transition: all 1s;
   color: white;
 }
-
 /* /COVERS */
 
 /* FOOTER */
@@ -392,8 +377,7 @@ a{
   color: #a3a3a3;
   margin-left: 20px;
 }
-#footer .song .favorites .fa-heart{
-}
+
 /* /song-info */
 #footer .player > div {
   width: 100%;
@@ -423,10 +407,10 @@ a{
   font-size: 11px;
 }
 #footer .bar{
+  height: 0;
   border-top: none;
   border-left: none;
   border-right: none;
-  height: 0;
   border-radius: 2px;
 }
 #footer .whole-bar{
