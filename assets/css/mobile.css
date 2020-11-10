@@ -1,4 +1,6 @@
 /* extra small screen */
+
+
 @media screen and (max-height: 599px){
   #sidebar .app-menu,
   #upgrade{
@@ -10,9 +12,6 @@
   /* /Utility */
   .disp-none-xs{
     display: none !important;
-  }
-  .f-shrink{
-    flex-shrink: 1;
   }
   /* /Utility */
   #footer .song .favorites{
