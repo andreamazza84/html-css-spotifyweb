@@ -149,9 +149,12 @@ a{
   text-align: center;
 }
 #main #sidebar .top-menu a.small_icon > img{
-  color: #717171;
-  height: 20px;
+  opacity: 0.5;
+  height: 25px;
   margin: 5px;
+}
+#main #sidebar .top-menu a.small_icon:hover > img{
+  opacity: 1;
 }
 #main #sidebar .playlist-menu a{
   margin-left: 10px;

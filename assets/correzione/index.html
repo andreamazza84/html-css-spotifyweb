@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify clone</title>
+</head>
+<body>
+    <div class="wrapper d-flex">
+        <main id="site_content" class="d-flex">
+            <aside class="sidebar_menu">
+              <div class="nav_top_wrapper">
+                <div class="logo">
+                  <img src="../img/logo.svg" alt="">
+                </div>
+                <div class="menu_primary">
+                  <ul>
+                    <li><a class="active" href="#"><img src="../img/home.svg" alt=""> Home</a></li>
+                    <li><a href="#"><img src="../img/search.svg" alt=""> Cerca</a></li>
+                    <li><a href="#"><img src="../img/libreria.svg" alt=""> La tua libreria</a></li>
+
+                  </ul>
+
+                </div>
+
+                <div class="menu_playlist">
+                  <h3>Playlist</h3>
+                  <a href="#">
+                  <div class="plus_wrapper">
+                      <i class="fas fa-plus"></i>
+                  </div>
+                  Crea Playlist
+                  </a>
+                  <ul class="menu_playlist_nav">
+                    <li><a href="#">Nome playlist</a></li>
+                    <li><a href="#">Nome playlist</a></li>
+                    <li><a href="#">Nome playlist</a></li>
+                    <li><a href="#">Nome playlist</a></li>
+                    <li><a href="#">Nome playlist</a></li>
+                    <li><a href="#">Nome playlist</a></li>
+                    <li><a href="#">Nome playlist</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="user_details">
+                <div class="download">
+                  <i class="far fa-arrow-alt-circle-down"></i>
+                  <a href="#">Installa App</a>
+                  <div class="user">
+                    <img src="../img/profile.svg" alt="profilo generico">
+                    <strong>Joe Pesci</strong>
+                  </div>
+                </div>
+              </div>
+            </aside>
+            <section class="covers_section">
+                <div class="subscribe_banner">
+                    lorem
+                </div>
+
+                <nav>
+                     <a href="#">Lorem</a>
+                     <a href="#">Lorem</a>
+                     <a href="#">Lorem</a>
+                     <a href="#">Lorem</a>
+
+                </nav>
+                <h2>Recently played</h2>
+                <div id="recently_played" class="d-flex flex-wrap">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+
+                </div>
+
+                <div id="created_for"></div>
+                <div id="popular"></div>
+
+
+            </section>
+        </main>
+        <footer id="site_footer">
+            <div class="playing">player</div>
+            <div class="player">
+              <div class="player-top">
+                <a class="d-flex" href="#"><i class="fas fa-random"></i></a>
+                <a class="d-flex" href="#"><i class="fas fa-step-backward"></i></a>
+                <a class="d-flex" href="#"><i class="far fa-play-circle"></i></a>
+                <a class="d-flex" href="#"><i class="fas fa-step-forward"></i></a>
+                <a class="d-flex" href="#"><i class="fas fa-redo-alt"></i></a>
+              </div>
+              <div class="player-bottom">
+                <div class="time-gone">
+                  <div class="pointer"></div>
+                </div>
+              </div>
+            </div>
+            <div class="volume">lorem</div>
+        </footer>
+    </div>
+
+</body>
+</html>
